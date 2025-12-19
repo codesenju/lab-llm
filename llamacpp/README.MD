@@ -51,3 +51,9 @@ models:
 LLAMA_CACHE="$HOME/.models/llama.cpp" \
 llama-server -hf mradermacher/gpt2-alpaca-gpt4-GGUF:Q8_0
 ```
+##
+```bash
+hf download mistralai/Ministral-3-3B-Instruct-2512-GGUF \
+  --include "*Q4_K_M.gguf" \
+  --local-dir ./models
+```
